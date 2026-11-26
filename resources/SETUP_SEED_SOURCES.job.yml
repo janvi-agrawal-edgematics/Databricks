@@ -1,0 +1,8 @@
+resources:
+  jobs:
+    setup_seed_sources:
+      name: SETUP_SEED_SOURCES
+      tasks:
+      - task_key: SEED_SOURCES
+        notebook_task:
+          notebook_path: ../src/_setup/SEED_SOURCES.py
