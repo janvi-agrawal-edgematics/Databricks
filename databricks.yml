@@ -1,0 +1,7 @@
+bundle:
+  name: infa_migration
+include:
+- resources/*.yml
+targets:
+  dev:
+    default: true
