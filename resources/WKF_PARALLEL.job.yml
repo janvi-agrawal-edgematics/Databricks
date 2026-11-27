@@ -1,0 +1,102 @@
+resources:
+  jobs:
+    wkf_parallel:
+      name: WKF_PARALLEL
+      description: Migrated from Informatica workflow WKF_PARALLEL (parallel)
+      max_concurrent_runs: 1
+      parameters:
+      - name: catalog
+        default: workspace
+      - name: tgt_schema
+        default: datalake
+      tasks:
+      - task_key: PG_MAP_DEPT
+        notebook_task:
+          notebook_path: ../src/PG_MAP_DEPT.py
+      - task_key: PG_MAP_DIST
+        notebook_task:
+          notebook_path: ../src/PG_MAP_DIST.py
+      - task_key: PG_MAP_EMP
+        notebook_task:
+          notebook_path: ../src/PG_MAP_EMP.py
+      - task_key: PG_MAP_IINPROM
+        notebook_task:
+          notebook_path: ../src/PG_MAP_IINPROM.py
+      - task_key: PG_MAP_INVOICE_LINE
+        notebook_task:
+          notebook_path: ../src/PG_MAP_INVOICE_LINE.py
+      - task_key: PG_MAP_ITEMS
+        notebook_task:
+          notebook_path: ../src/PG_MAP_ITEMS.py
+      - task_key: PG_MAP_JOBS
+        notebook_task:
+          notebook_path: ../src/PG_MAP_JOBS.py
+      - task_key: PG_MAP_MANUF
+        notebook_task:
+          notebook_path: ../src/PG_MAP_MANUF.py
+      - task_key: PG_MAP_OITEMS
+        notebook_task:
+          notebook_path: ../src/PG_MAP_OITEMS.py
+      - task_key: PG_MAP_ORDERS
+        notebook_task:
+          notebook_path: ../src/PG_MAP_ORDERS.py
+      - task_key: PG_MAP_PAYMENT
+        notebook_task:
+          notebook_path: ../src/PG_MAP_PAYMENT.py
+      - task_key: PG_MAP_PLAN_RATE
+        notebook_task:
+          notebook_path: ../src/PG_MAP_PLAN_RATE.py
+      - task_key: PG_MAP_PROM
+        notebook_task:
+          notebook_path: ../src/PG_MAP_PROM.py
+      - task_key: PG_MAP_STORES
+        notebook_task:
+          notebook_path: ../src/PG_MAP_STORES.py
+      - task_key: PG_MAP_TMACCOUNT
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TMACCOUNT.py
+      - task_key: PG_MAP_TMADD
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TMADD.py
+      - task_key: PG_MAP_TMBILL_CYC
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TMBILL_CYC.py
+      - task_key: PG_MAP_TMBILL_PROF
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TMBILL_PROF.py
+      - task_key: PG_MAP_TMCDR_DATA
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TMCDR_DATA.py
+      - task_key: PG_MAP_TMCDR_SMS
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TMCDR_SMS.py
+      - task_key: PG_MAP_TMCDR_VOICE
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TMCDR_VOICE.py
+      - task_key: PG_MAP_TMCELL_TOWER
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TMCELL_TOWER.py
+      - task_key: PG_MAP_TM_CUST
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TM_CUST.py
+      - task_key: PG_MAP_TM_DEVICE
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TM_DEVICE.py
+      - task_key: PG_MAP_TM_MSIS
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TM_MSIS.py
+      - task_key: PG_MAP_TM_NET
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TM_NET.py
+      - task_key: PG_MAP_TM_PLAN
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TM_PLAN.py
+      - task_key: PG_MAP_TM_PRODUCT
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TM_PRODUCT.py
+      - task_key: PG_MAP_TM_SIM
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TM_SIM.py
+      - task_key: PG_MAP_TM_SUB
+        notebook_task:
+          notebook_path: ../src/PG_MAP_TM_SUB.py

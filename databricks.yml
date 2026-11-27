@@ -5,3 +5,4 @@ include:
 targets:
   dev:
     default: true
+    mode: development
